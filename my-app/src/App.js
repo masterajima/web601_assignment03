@@ -23,6 +23,31 @@ export default function App(){
   []});
   return(<Space direction='vertical' size='middle' style={{display:'flex'}}>
     <Row gutter={16}>
+      {status&
+      blog.map(blogObj)=>{
+        return(
+          <MyCard>
+            key={blogObj.id}
+            title={blogObj.title}
+            content={blogObj.body}
+            </MyCard>
+          
+        );
+
+}});
+      <Col className='gutter-row'></Col>
+      <title>pharmacy app</title>
+    </Row>
+    <Divider Orientation='center'>Navigation</Divider>
+    <Row>
+      <nav>
+        <Link to='/home'><Fahome/>Home</Link>
+        <Link to='/profile'>Profile</Link>
+      </nav>
+    </Row>
+    <Divider orientation='center'>Navigation</Divider>
+    <Row></Row>
+  </Space>
       <Col className='gutter-row'></Col>
       <title>pharmacy app</title>
     </Row>
